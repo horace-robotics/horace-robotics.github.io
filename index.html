@@ -1,3 +1,154 @@
-<html>
-<center><img src='images/logo.png'></center>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HORACE project</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+  
+<body>
+
+<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">HORACE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#project">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#publications">Publications</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<header class="p-5">
+  <div class="container text-center">
+    <img width="60%" src="images/logo.png">
+    <br><br>
+    <h4>Human-robot collaborative manipulation by considering geometry and uncertainty (HORACE)</h4>
+  </div>
+</header>
+
+
+<section id="project" class="bg-light p-5">
+<div class="container">
+<div class="row">
+	<div class="col-lg-12 mx-auto">
+	
+	<h2>Project</h2>
+
+	<p>Recent advances in anthropomorphic and multi-limbs robots have led to an increased interest in exploiting these
+platforms for human-robot collaboration (HRC). HRC is challenging in multiple aspects, covering perception,
+learning, control and planning levels. The underlying problems share as common ground that they need some
+form of distances to be measured, which are used as some form of cost functions that need to be minimized.
+Distance measurement is thus an essential common ingredient at the core of robotics. For control, these distances
+are typically used in the form of residuals that are corrected by a feedback controller. For planning, trajectories
+minimizing the total distance between two points correspond to geodesic paths (for Euclidean distances, these
+paths correspond to straight segments between the two points). By extension, these distances are also the core
+component to model diffusion processes and kernel function to model (co)variations and uncertainty.
+In HORACE, we will treat these distances from a geometric perspective, which boils down to the selection
+of efficient representations and manifolds to specify these distances. The goal is to measure distances by going
+beyond Euclidean distances between two points, but to instead consider distances between other geometric
+objects and to account for manifolds that are not Euclidean, which is often the case in robotics. We will then
+exploit these distance measures in the form of kernel functions that can be used in Gaussian processes to account
+for variations and uncertainty.</p>
+
+	<p>By leveraging our previous expertise, we will demonstrate the developed approaches in several human-robot
+collaboration scenarios involving joint physical collaboration, assembly, manipulation of deformable objects, all
+with high degree of freedom robots, in particular, the TALOS humanoid robot readily available at JSI. We will
+investigate how the control of a humanoid robot can be effectively achieved by using the proposed geometric
+descriptors and how the geodesics in such encoding can be used for effective planning.
+HORACE will lead to novel methodological developments yielding more efficient human-robot collaboration
+and better understanding of its inherent geometrical structure. The three partners each bring knowledge and
+equipment that complement the others. Idiap brings knowledge on the geometric perspectives, UNIZG-FER
+on planning and HRC and JSI on humanoid robots and HRC. The complementarity of the partners will enable
+concrete advancements in the field of human-robot collaboration.</p>
+
+	</div>
+</div>
+</div>
+</section>
+
+
+<section id="team" class="p-5">
+<div class="container">
+<div class="row">
+	<div class="col-lg-12 mx-auto">
+	<h2>Team</h2>
+	<div class="container">
+	<div class="row p-3">
+		<div class="col-lg-4 text-center my-auto">
+		<a href="https://www.idiap.ch" target="_BLANK"><img src="images/idiap.svg" class="img-fluid"></a>
+		</div>
+		<div class="col-lg-4 text-center my-auto">
+		<a href="https://www.fer.unizg.hr/en" target="_BLANK"><img src="images/fer.svg" class="img-fluid"></a>
+		</div>
+		<div class="col-lg-4 text-center my-auto">
+		<a href="https://abr.ijs.si/" target="_BLANK"><img src="images/jsi.png" class="img-fluid"></a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4 text-center my-auto">
+		<a href="https://www.idiap.ch" target="_BLANK"><h5 class="mb-3">Idiap Research Institute</h5></a>
+		</div>
+		<div class="col-lg-4 text-center my-auto">
+		<a href="https://www.fer.unizg.hr/en" target="_BLANK"><h5 class="mb-3">University of Zagreb</h5></a>
+		</div>
+		<div class="col-lg-4 text-center my-auto">
+		<a href="https://abr.ijs.si/" target="_BLANK"><h5 class="mb-3">Jožef Stefan Institute</h5></a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4 text-center">
+		<p class="text-muted mb-0">Members:</p>
+		<p class="text-muted mb-0"><a href="https://calinon.ch/" target="_BLANK">Sylvain Calinon</a></p>
+		<p class="text-muted mb-0"><a href="https://www.idiap.ch/~mschonger/" target="_BLANK">Martin Schonger</a></p>
+		<p class="text-muted mb-0"><a href="https://tobiloew.ch/" target="_BLANK">Tobias Löw</a></p>
+		</div>
+		<div class="col-lg-4 text-center">
+		<p class="text-muted mb-0">Members:</p>
+		<p class="text-muted mb-0"><a href="https://www.fer.unizg.hr/en/ivan.markovic" target="_BLANK">Ivan Markovic</a></p>
+		<p class="text-muted mb-0"><a href="https://www.fer.unizg.hr/en/borna.paro" target="_BLANK">Borna Paro</a></p>
+		</div>
+		<div class="col-lg-4 text-center">
+		<p class="text-muted mb-0">Members:</p>
+		<p class="text-muted mb-0"><a href="https://abr.ijs.si/people/andrej-gams/" target="_BLANK">Andrej Gams</a></p>
+		<p class="text-muted mb-0"><a href="https://abr.ijs.si/people/kristina-savevska/" target="_BLANK">Kristina Savevska</a></p>
+		</div>
+	</div>
+
+	</div>
+	</div>
+</div>
+</div>
+</section>
+
+
+<section id="publications" class="bg-light p-5">
+<div class="container">
+<div class="row">
+	<div class="col-lg-12 mx-auto">
+	<h2>Related publications</h2>
+
+	<p>Löw, T., Abbet, P. and Calinon, S. (2024). <a href='https://calinon.ch/papers/Loew-RAM2024.pdf' class='nodecor'><b>GAFRO: Geometric Algebra for Robotics</b></a>. IEEE Robotics and Automation Magazine (RAM).</p>
+
+	</div>
+</div>
+</div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
 </html>
